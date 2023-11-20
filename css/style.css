@@ -1,0 +1,33 @@
+body {
+    background-color: #f8f9fa; /* Cambia el color de fondo según tu preferencia */
+}
+
+.container {
+    margin-top: 50px; /* Ajusta según sea necesario */
+}
+
+h1 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Personaliza según tus necesidades */
+p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/*animación */
+.main-section {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hide-on-scroll {
+    opacity: 0;
+}

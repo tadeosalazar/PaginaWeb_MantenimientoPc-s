@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3E523</title>
+
+    <!--CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/area.css">
+
+</head>
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/OsoLogoVerde.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+        M3E523
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="administrador_inicio.php">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">#</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">#</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="areas_list.html">Areas</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="index.html" onclick="cerrarSesion()">Cerrar Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Crear Áreas-->
+  <div class="container mt-5">
+    <h2>Crear Área</h2>
+    <form id="areaForm">
+        <div class="mb-3">
+            <label for="nombre_area" class="form-label">Nombre del Área:</label>
+            <input type="text" class="form-control" id="nombre_area" name="nombre_area" required>
+        </div>
+        <div class="mb-3">
+            <label for="id_respons" class="form-label">Responsable:</label>
+            <select class="form-select" id="id_respons" name="id_respons" required>
+                <!-- Opciones de responsables se cargarán dinámicamente usando JavaScript -->
+            </select>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="crearArea()">Crear Área</button>
+    </form>
+</div>
+
+<!--Mostrar Áreas-->
+<div class="container mt-5">
+    <h2>Listado de Áreas</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre del Área</th>
+                <th>ID del Responsable</th>
+            </tr>
+        </thead>
+        <tbody id="areasTableBody">
+            <!-- La información se cargará aquí usando JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+<!--SCRIPT BOOTSTRAP-->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="js/area.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
