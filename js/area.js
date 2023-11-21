@@ -47,3 +47,7 @@ function cargarAreas() {
         }
     });
 }
+
+//EMPECEMOS A CREAR SALONES
+
+

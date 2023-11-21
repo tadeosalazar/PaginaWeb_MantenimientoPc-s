@@ -30,13 +30,27 @@ if ($result->num_rows > 0) {
         $tableRows .= "<td>" . $row["id_respons"] . "</td>";
         $tableRows .= "</tr>";
     }
-} else {
-    $tableRows = "<tr><td colspan='3'>No hay áreas en la base de datos</td></tr>";
-}
 
-// Imprimir solo las filas de la tabla
-echo $tableRows;
+    // Imprimir solo las filas de la tabla
+    echo $tableRows;
+
+    // Resetear el puntero de resultados para volver a usarlo
+    $result->data_seek(0);
+
+    // Imprimir las opciones del área
+    $options = "";
+    while ($row = $result->fetch_assoc()) {
+        $id_area = $row["id_area"];
+        $nombre_area = $row["nombre_area"];
+        $options .= "<option value='$id_area'>$nombre_area</option>";
+    }
+
+    echo $options;
+} else {
+    echo "<tr><td colspan='3'>No hay áreas en la base de datos</td></tr>";
+}
 
 // Cerrar la conexión a la base de datos
 $conn->close();
 ?>
+

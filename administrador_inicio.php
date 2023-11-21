@@ -28,13 +28,16 @@
             <a class="nav-link active" aria-current="page" href="administrador_inicio.php">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">#</a>
+            <a class="nav-link" href="#">Ordenes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">#</a>
+            <a class="nav-link" href="creardetalle.html">Crear detalle</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="areas_list.html">Areas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="salones_list.html">Salones</a>
           </li>
           <li class="nav-item">
           <a class="nav-link" href="index.html" onclick="cerrarSesion()">Cerrar Sesión</a>

@@ -25,13 +25,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="responsable_inicio.php">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">#</a>
+            <a class="nav-link" href="#">Crear Orden</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">#</a>
+            <a class="nav-link" href="detalle_list.html">Detalles de Dispositivos</a>
           </li>
           <li class="nav-item">
           <a class="nav-link" href="index.html" onclick="cerrarSesion()">Cerrar Sesión</a>

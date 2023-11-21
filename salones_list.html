@@ -50,41 +50,47 @@
     </div>
   </nav>
 
-  <!--Crear Áreas-->
-  <div class="container mt-5">
-    <h2>Crear Área</h2>
-    <form id="areaForm">
+<!--TAL Y TAL-->
+
+<!--Crear Salon-->
+
+
+<div class="container mt-5">
+    <h2>Crear Salón</h2>
+    <form id="salonForm">
+        <!-- Otros campos del formulario -->
         <div class="mb-3">
-            <label for="nombre_area" class="form-label">Nombre del Área:</label>
-            <input type="text" class="form-control" id="nombre_area" name="nombre_area" required>
+            <label for="nombre_salon" class="form-label">Nombre del Salón:</label>
+            <input type="text" class="form-control" id="nombre_salon" name="nombre_salon" required>
         </div>
+        <!-- Nuevo campo para seleccionar id_area -->
         <div class="mb-3">
-            <label for="id_respons" class="form-label">Responsable:</label>
-            <select class="form-select" id="id_respons" name="id_respons" required>
-                <!-- Opciones de responsables se cargarán dinámicamente usando JavaScript -->
+            <label for="id_area" class="form-label">Seleccionar Área:</label>
+            <select class="form-select" id="id_area" name="id_area" required>
+                <!-- Opciones de áreas se cargarán dinámicamente usando JavaScript -->
             </select>
         </div>
-        <button type="button" class="btn btn-primary" onclick="crearArea()">Crear Área</button>
+  
+        <button type="button" class="btn btn-primary" onclick="crearSalon()">Crear Salón</button>
     </form>
-</div>
+  </div>
 
-<!--Mostrar Áreas-->
+<!--Mostrar Salon-->
 <div class="container mt-5">
-    <h2>Listado de Áreas</h2>
+    <h2>Listado de Salones</h2>
     <table class="table table-striped">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Nombre del Área</th>
-                <th>ID del Responsable</th>
+                <th>Nombre del Salón</th>
+                <th>ID del Area</th>
             </tr>
         </thead>
-        <tbody id="areasTableBody">
+        <tbody id="salonesTableBody">
             <!-- La información se cargará aquí usando JavaScript -->
         </tbody>
     </table>
 </div>
-<!--TAL Y TAL-->
 
 
 <!--SCRIPT BOOTSTRAP-->
@@ -92,7 +98,7 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 
-<script src="js/area.js"></script>
+<script src="js/salon.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
