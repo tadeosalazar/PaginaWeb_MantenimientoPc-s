@@ -28,7 +28,7 @@
             <a class="nav-link active" aria-current="page" href="responsable_inicio.php">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Crear Orden</a>
+            <a class="nav-link" href="crearorden.html">Crear Orden</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="detalle_list.html">Detalles de Dispositivos</a>
